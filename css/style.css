@@ -9,6 +9,12 @@ nav .brand-logo {
   width: auto;
 }
 
+.petCarousel {
+  width: 50%;
+  margin-left: 25%;
+  padding-bottom: .2em;
+}
+
 .customNavbar {
   background-color: rgba(255, 255, 255, .7);
 
