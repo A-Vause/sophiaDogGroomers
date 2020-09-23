@@ -1,0 +1,90 @@
+body {
+  background-color: pink;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+  max-height: 8rem;
+  width: auto;
+}
+
+.customNavbar {
+  background-color: rgba(255, 255, 255, .7);
+
+}
+
+p {
+  line-height: 2rem;
+}
+
+a:hover {
+  box-shadow: rgba(255, 255, 255, .7);
+  color: rgb(218, 126, 218);
+}
+
+.footerLink {
+  color: white;
+  text-decoration: underline;
+  text-shadow: #444;
+}
+
+.hello {
+  padding-top: 12rem;
+}
+
+.leftQuote {
+  text-align: left;
+  padding-right: 30%;
+}
+
+.lowQuote {
+  margin-top: 60%;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-image {
+  position: top;
+}
+
+.parallax-container {
+  width: 100%;
+  min-height: 900px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+    align-items: top;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
