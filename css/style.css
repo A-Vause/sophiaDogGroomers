@@ -29,6 +29,13 @@ a:hover {
   color: rgb(218, 126, 218);
 }
 
+.bookCont {
+  margin-top: 10%;
+  width: 50%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
 .footerLink {
   color: white;
   text-decoration: underline;
