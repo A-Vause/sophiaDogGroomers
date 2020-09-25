@@ -15,6 +15,22 @@ nav .brand-logo {
   padding-bottom: .2em;
 }
 
+
+.contactForm {
+  margin: auto;
+  left: 25%;
+  opacity: 50%;
+  position: fixed;
+  text-align: center;
+  bottom: 15%;
+  background: rgba(0, 0, 0, 0.5);
+  color: rgba(241, 241, 241 .5);
+  width: 50%;
+  padding: 20px;
+  display: block;
+  float: none;
+}
+
 .customNavbar {
   background-color: rgba(255, 255, 255, .7);
 
@@ -30,7 +46,7 @@ a:hover {
 }
 
 .bookCont {
-  margin-top: 10%;
+  margin-top: 5%;
   width: 50%;
   margin-left: 20%;
   margin-right: 20%;
@@ -53,6 +69,32 @@ a:hover {
 
 .lowQuote {
   margin-top: 60%;
+}
+
+#myVideo {
+  position: fixed;
+  display: block;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translate(-50%, -50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url("../images/supernova.png"); 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  padding-bottom: 20px;
+}
+
+.rightQuote {
+  padding-left: 70%;
+  margin-right: -10%;
 }
 
 .sidenav-trigger {
