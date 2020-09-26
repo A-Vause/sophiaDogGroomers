@@ -3,9 +3,15 @@
 
     $('.sidenav').sidenav();
     $('.parallax').parallax();
-    $('.carousel').carousel();
+    $('.carousel').carousel().carousel({
+      shift: -100,
+      dist: -100,
+    });
     // $('.carousel.carousel-slider').carousel({
-    //   fullWidth: true,
+    //   indicators: true,
+    //   height: 300,
+    //   transition: 500,
+    //   interval: 4000
     // });
 
   }); // end of document ready

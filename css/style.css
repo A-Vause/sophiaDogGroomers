@@ -22,7 +22,7 @@ nav .brand-logo {
   float: none;
   position: fixed;
   min-width: 100%;
-  min-height: 68%;
+  min-height: 73%;
 }
 
 .bookCont {
@@ -34,12 +34,15 @@ nav .brand-logo {
   display: block;
 }
 
-.carouselCont {
-  margin-top: 3%;
+.carousel .carousel-item {
+  width: 300px !important;
+  height: fit-content;
 }
 
-.galleryImg {
-  min-width: 100%;
+.carouselCont {
+  margin-top: 4%;
+  display: block;
+  float: none;
 }
 
 .contactForm {
@@ -107,12 +110,6 @@ a:hover {
   background-size: cover; 
   padding-bottom: 20px;
   float: none;
-}
-
-.petCarousel {
-  width: 50%;
-  margin-left: 25%;
-  padding-bottom: .2em;
 }
 
 .rightQuote {
