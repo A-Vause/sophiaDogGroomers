@@ -42,7 +42,7 @@
   </div> -->
 
 <!-- BACKGROUND IMAGE -->
-  <div id="backgroundImg">
+  <div class="backgroundImg">
     </div>
 
   <!-- FORM -->
@@ -53,9 +53,10 @@
       <div class="col">
 
         <h5>Book an Appointment</h5>
-        <p>We're open 7 days a week from 7:00 a.m. to 5:00 p.m.
+        <p>We're open 7 days a week from 7:00 a.m. to 5:00 p.m.<br>
           Let us know a few details and we'll call you personally
-          to discuss your needs and confirm your appointment.
+          to discuss your needs and confirm your appointment.<br>
+          We cannot guarantee your requested time but we'll try our best!<br>
           We typically confirm within 2 hours.</p>
 
       </div>
@@ -66,41 +67,35 @@
 
         <div class="row">
 
-          <div class="input-field col l6 m6 s12">
+          <div class="input-field col l3 m3 s12">
               <input id="first_name" type="text" class="validate">
               <label for="first_name">First Name</label>
             </div>
 
-          <div class="input-field col l6 m6 s12">
+          <div class="input-field col l3 m3 s12">
             <input id="last_name" type="text" class="validate">
             <label for="last_name">Last Name</label>
           </div>
 
-        </div>
-
-        <div class="row">
-          <div class="col l6 m6 s12">
-
+          <div class="col l3 m3 s12">
             <div class="input-field">
               <input id="phone" type="text" class="validate">
               <label for="phone">Phone</label>
-            </div>
-            
+            </div>            
           </div>
 
-          <div class="col l6 m6 s12">
-
+          <div class="col l3 m3 s12">
             <div class="input-field">
               <input id="email" type="text" class="validate">
               <label for="email">Email</label>
             </div>
-            
           </div>
 
         </div>
 
+
         <div class="row">
-          <div class="col l6 m6 s12">
+          <div class="col l3 m3 s12">
 
             <div class="input-field">
               <input id="pet_name" type="text" class="validate">
@@ -109,22 +104,39 @@
 
           </div>
 
-          <div class="col l6 m6 s12 offset-2">
+          <div class="col l3 m3 s12">
 
             <div class="input-field">
-              <input id="pet_type">
-              <select>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
+              <select id="pet_type">
+                <option value="1">Dog (Small)</option>
+                <option value="2">Dog (Medium)</option>
+                <option value="3">Dog (Large)</option>
+                <option value="3">Dog (Extra Large or Giant)</option>
+                <option value="3">Cat</option>
+                <option value="3">Other/Not Sure</option>
               </select>
               <label for="pet_type">Pet Type</label>
             </div>
 
           </div>
 
+          <div class="col l3 m3 s12">
 
-          
+          <div class="input-field">
+            <input id="date" type="text" class="datepicker">
+            <label for="date">Requested Date(s)</label>
+          </div>
+
+          </div>
+
+          <div class="col l3 m3 s12">
+
+            <div class="input-field">
+              <input id="time" type="text" class="timepicker">
+              <label for="time">Requested Time</label>
+            </div>
+  
+          </div>
 
         </div>
 

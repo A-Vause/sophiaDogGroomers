@@ -7,12 +7,10 @@
       shift: -100,
       dist: -100,
     });
-    // $('.carousel.carousel-slider').carousel({
-    //   indicators: true,
-    //   height: 300,
-    //   transition: 500,
-    //   interval: 4000
-    // });
+    $('select').formSelect();
+    $('.datepicker').datepicker();
+    $('.timepicker').timepicker();
+
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
