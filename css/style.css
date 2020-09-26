@@ -1,30 +1,53 @@
 body {
-  background-color: pink;
+  background-color: rgb(248, 199, 207);
 }
 
 nav ul a,
 nav .brand-logo {
   color: #444;
-  max-height: 8rem;
+  max-height: 12rem;
   width: auto;
 }
 
-.petCarousel {
-  width: 50%;
-  margin-left: 25%;
-  padding-bottom: .2em;
+.backgroundImg {
+  background-image: url('../images/friends.jpg');
+  float: none;
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
 }
 
+.backgroundImgGallery {
+  background-image: url('../images/wood-3.jpg');
+  float: none;
+  position: fixed;
+  min-width: 100%;
+  min-height: 68%;
+}
+
+.bookCont {
+  margin-top: 3em;
+  width: 50%;
+  margin-left: 20%;
+  margin-right: 20%;
+  position: relative;
+  display: block;
+}
+
+.carouselCont {
+  margin-top: 3%;
+}
+
+.galleryImg {
+  min-width: 100%;
+}
 
 .contactForm {
-  margin: auto;
-  left: 25%;
-  opacity: 50%;
-  position: fixed;
+  position: relative;
+  color: brown;
   text-align: center;
   bottom: 15%;
-  background: rgba(0, 0, 0, 0.5);
-  color: rgba(241, 241, 241 .5);
+  background-color: rgba(255, 255, 255, .5);
   width: 50%;
   padding: 20px;
   display: block;
@@ -43,13 +66,6 @@ p {
 a:hover {
   box-shadow: rgba(255, 255, 255, .7);
   color: rgb(218, 126, 218);
-}
-
-.bookCont {
-  margin-top: 5%;
-  width: 50%;
-  margin-left: 20%;
-  margin-right: 20%;
 }
 
 .footerLink {
@@ -90,6 +106,13 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover; 
   padding-bottom: 20px;
+  float: none;
+}
+
+.petCarousel {
+  width: 50%;
+  margin-left: 25%;
+  padding-bottom: .2em;
 }
 
 .rightQuote {
