@@ -9,6 +9,10 @@ nav .brand-logo {
   width: auto;
 }
 
+#aboutDiasCont {
+  padding: 20px;
+}
+
 .backgroundImg {
   background-image: url('../images/friends.jpg');
   float: none;
@@ -19,7 +23,7 @@ nav .brand-logo {
 }
 
 .backgroundImgGallery {
-  background-image: url('../images/wood-3.jpg');
+  background-image: url('../images/gallery-wall.jpg');
   float: none;
   position: fixed;
   min-width: 100%;
@@ -46,12 +50,31 @@ nav .brand-logo {
   float: none;
 }
 
+#cavalierCont {
+  height: 20%;
+  size: cover;
+}
+
+#cavalierImg {
+  top: -15%;
+}
+
+.connect {
+  line-height: 2em;
+}
+
+.connectTxt {
+  position: relative;
+  top: -.4em;
+  left: .2em;
+}
+
 .contactForm {
   position: relative;
   color: brown;
   text-align: center;
   bottom: 15%;
-  background-color: rgba(255, 255, 255, .5);
+  background-color: rgba(255, 255, 255, .7);
   width: 80%;
   padding: 20px;
   display: block;
@@ -59,8 +82,12 @@ nav .brand-logo {
 }
 
 .customNavbar {
-  background-color: rgba(255, 255, 255, .7);
+  /* background-color: rgba(255, 255, 255, .2); */
+  background-color: rgb(248, 199, 207);
+}
 
+#doodleImg {
+  left: 65%;
 }
 
 p {
@@ -69,17 +96,30 @@ p {
 
 a:hover {
   box-shadow: rgba(255, 255, 255, .7);
-  color: rgb(218, 126, 218);
+  color: rgb(218, 80, 218);
+}
+
+.footerHead {
+  color: pink
 }
 
 .footerLink {
-  color: white;
+  color: rgb(221, 142, 221);
   text-decoration: underline;
   text-shadow: #444;
 }
 
 .hello {
   padding-top: 14rem;
+}
+
+#huskyImg {
+  height: 15vh;
+}
+
+.connectIcon {
+  padding-top: .2em;
+  position: relative;
 }
 
 .leftQuote {
@@ -89,6 +129,15 @@ a:hover {
 
 .lowQuote {
   margin-top: 60%;
+}
+
+.rightQuote {
+  padding-left: 70%;
+  margin-right: -10%;
+}
+
+#muttImg {
+  size: 70%;
 }
 
 #myVideo {
@@ -113,11 +162,6 @@ a:hover {
   float: none;
 }
 
-.rightQuote {
-  padding-left: 70%;
-  margin-right: -10%;
-}
-
 .sidenav-trigger {
   color: #26a69a;
 }
@@ -136,6 +180,17 @@ a:hover {
   .parallax-container .section {
     width: 100%;
   }
+
+.wordBand {
+  padding-top: 20px;
+  padding-bottom: 80px;
+  margin-bottom: 3vh;
+}
+ 
+.wordBand2 {
+  margin_top: -20px;
+  padding-bottom: 40px;
+}
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
@@ -158,7 +213,7 @@ a:hover {
   padding: 0 15px;
 }
 .icon-block .material-icons {
-  font-size: inherit;
+  /* font-size: inherit; */
 }
 
 footer.page-footer {
