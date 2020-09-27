@@ -56,93 +56,98 @@
 
         <h3 class="center white-text">Book an Appointment</h3>
         <p class="center">We're open 7 days a week from 7:00 a.m. to 5:00 p.m.<br>
-          Let us know a few details and we'll call you personally
-          to discuss your needs and confirm your appointment.<br>
-          We cannot guarantee your requested time but we'll try our best!<br>
-          We typically confirm within 2 hours.</p>
+          Let us know a few details and we'll call you personally to confirm. We cannot guarantee
+          <br> your requested time but we'll try our best! We typically respond within 2 hours.</p>
 
       </div>
 
     </div>
 
-    <div class="contactForm">
+    <form id="requestForm" method="post">
 
-      <div class="row">
+      <div class="contactForm">
 
-        <div class="input-field col l3 m3 s12">
-          <input id="first_name" type="text" class="validate">
-          <label for="first_name">First Name</label>
-        </div>
+        <div class="row">
 
-        <div class="input-field col l3 m3 s12">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Last Name</label>
-        </div>
-
-        <div class="col l3 m3 s12">
-          <div class="input-field">
-            <input id="phone" type="text" class="validate">
-            <label for="phone">Phone</label>
+          <div class="input-field col l3 m3 s12">
+            <input id="firstName" type="text" class="validate">
+            <label for="firstName">First Name</label>
           </div>
-        </div>
 
-        <div class="col l3 m3 s12">
-          <div class="input-field">
-            <input id="email" type="text" class="validate">
-            <label for="email">Email</label>
+          <div class="input-field col l3 m3 s12">
+            <input id="lastName" type="text" class="validate">
+            <label for="lastName">Last Name</label>
           </div>
-        </div>
 
-      </div>
+          <div class="col l3 m3 s12">
+            <div class="input-field">
+              <input id="phone" type="text" class="validate">
+              <label for="phone">Phone</label>
+            </div>
+          </div>
 
-
-      <div class="row">
-        <div class="col l3 m3 s12">
-
-          <div class="input-field">
-            <input id="pet_name" type="text" class="validate">
-            <label for="pet_name">Pet's Name</label>
+          <div class="col l3 m3 s12">
+            <div class="input-field">
+              <input id="email" type="text" class="validate">
+              <label for="email">Email</label>
+            </div>
           </div>
 
         </div>
 
-        <div class="col l3 m3 s12">
 
-          <div class="input-field">
-            <select id="pet_type">
-              <option value="1">Dog (Small)</option>
-              <option value="2">Dog (Medium)</option>
-              <option value="3">Dog (Large)</option>
-              <option value="3">Dog (Extra Large or Giant)</option>
-              <option value="3">Cat</option>
-              <option value="3">Other/Not Sure</option>
-            </select>
-            <label for="pet_type">Pet Type</label>
+        <div class="row">
+          <div class="col l3 m3 s12">
+
+            <div class="input-field">
+              <input id="petName" type="text" class="validate">
+              <label for="petName">Pet's Name</label>
+            </div>
+
           </div>
 
-        </div>
+          <div class="col l3 m3 s12">
 
-        <div class="col l3 m3 s12">
+            <div class="input-field">
+              <select id="petType">
+                <option value="1">Dog (Small)</option>
+                <option value="2">Dog (Medium)</option>
+                <option value="3">Dog (Large)</option>
+                <option value="3">Dog (Extra Large or Giant)</option>
+                <option value="3">Cat</option>
+                <option value="3">Other/Not Sure</option>
+              </select>
+              <label for="petType">Pet Type</label>
+            </div>
 
-          <div class="input-field">
-            <input id="date" type="text" class="datepicker">
-            <label for="date">Requested Date(s)</label>
           </div>
 
-        </div>
+          <div class="col l3 m3 s12">
 
-        <div class="col l3 m3 s12">
+            <div class="input-field">
+              <input id="date" type="text" class="datepicker">
+              <label for="date">Requested Date(s)</label>
+            </div>
 
-          <div class="input-field">
-            <input id="time" type="text" class="timepicker">
-            <label for="time">Requested Time</label>
           </div>
 
+          <div class="col l3 m3 s12">
+
+            <div class="input-field">
+              <input id="time" type="text" class="timepicker">
+              <label for="time">Requested Time</label>
+            </div>
+
+          </div>
         </div>
+
+        <button class="btn waves-effect waves-light" type="submit" name="action" id="submitBtn">Submit
+          <i class="material-icons right">send</i>
+        </button>
+
       </div>
     </div>
-  </div>
-  </div>
+  </form>
 
   <!-- FOOTER -->
 
@@ -161,17 +166,27 @@
         <div class="col l3 s12">
           <h5 class="white-text">3689 Kings Row<br>Reno, NV 89503</h5>
           <p>in the Viewcrest Shopping Center</p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3076.7436037517064!2d-119.85912964936611!3d39.54283767937565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809947e8ef32f0d7%3A0xabd0e6f628ac168f!2s3689%20Kings%20Row%2C%20Reno%2C%20NV%2089503!5e0!3m2!1sen!2sus!4v1601182026681!5m2!1sen!2sus" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>        
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3076.7436037517064!2d-119.85912964936611!3d39.54283767937565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809947e8ef32f0d7%3A0xabd0e6f628ac168f!2s3689%20Kings%20Row%2C%20Reno%2C%20NV%2089503!5e0!3m2!1sen!2sus!4v1601182026681!5m2!1sen!2sus"
+            width="200" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
         </div>
         <div class="col l3 s12">
           <h5 class="footerHead">Connect</h5>
           <ul>
-            <li class="connect"><a class="white-text" href="tel:1-775-825-4254"><i class="material-icons connectIcon">phone</i><span class="connectTxt">(775) 825-4254</span></a></li>
-            <li class="connect"><a class="white-text connectTxt" href="#!"><i class="material-icons connectIcon">email</i> <span class="connectTxt">info@lisaspamperedpaws.com</span></a></li>
+            <li class="connect"><a class="white-text" href="tel:1-775-825-4254"><i
+                  class="material-icons connectIcon">phone</i><span class="connectTxt">(775) 825-4254</span></a></li>
+            <li class="connect"><a class="white-text connectTxt" href="#!"><i
+                  class="material-icons connectIcon">email</i> <span
+                  class="connectTxt">info@lisaspamperedpaws.com</span></a></li>
             <li class="connect"><a class="white-text connectTxt"
-                href="https://www.facebook.com/Lisas-Pampered-Paws-Pet-Grooming-115065620131212"><i class="material-icons connectIcon">facebook</i><span class="connectTxt">Facebook</span></a></li>
-            <li class="connect"><a class="white-text connectTxt" href="#!"><img src="./images/instagram-icon.png" class="connectIcon"/> <span class="connectTxt">Instagram</span></a></li>
-            <li class="connect"><a class="white-text connectTxt" href="https://www.yelp.com/biz/lisas-pampered-paws-pet-grooming-reno"><img src="images/yelp-icon.png" class="connectIcon" /> <span class="connectTxt">Yelp</span></a>
+                href="https://www.facebook.com/Lisas-Pampered-Paws-Pet-Grooming-115065620131212"><i
+                  class="material-icons connectIcon">facebook</i><span class="connectTxt">Facebook</span></a></li>
+            <li class="connect"><a class="white-text connectTxt" href="#!"><img src="./images/instagram-icon.png"
+                  class="connectIcon" /> <span class="connectTxt">Instagram</span></a></li>
+            <li class="connect"><a class="white-text connectTxt"
+                href="https://www.yelp.com/biz/lisas-pampered-paws-pet-grooming-reno"><img src="images/yelp-icon.png"
+                  class="connectIcon" /> <span class="connectTxt">Yelp</span></a>
             </li>
           </ul>
         </div>
@@ -187,8 +202,8 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src="js/materialize.js"></script>
 
 </body>
 
