@@ -41,11 +41,13 @@ nav .brand-logo {
 
 .carousel .carousel-item {
   width: 300px !important;
-  height: fit-content;
+  min-height: fit-content;
 }
 
 .carouselCont {
   margin-top: 4%;
+  min-height: 52vh;
+  min-width: 100vh;
   display: block;
   float: none;
 }
