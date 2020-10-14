@@ -77,6 +77,11 @@ nav .brand-logo {
   top: -15%;
 }
 
+.centerQuote {
+  margin-bottom: -10px;
+  background-color: rgba(214, 150, 124, .3);
+}
+
 .connect {
   line-height: 2em;
 }
@@ -116,6 +121,97 @@ a:hover {
   color: rgb(218, 80, 218);
 }
 
+.effect {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 1em;
+  cursor: pointer;
+}
+.effect__heading {
+  font-size: 1.5em;
+  line-height: 1.2;
+  position: relative;
+  z-index: 2;
+}
+.effect__heading:after {
+  content: '';
+  position: absolute;
+}
+.effect__subheading {
+  font-family: 'Hindi', Avenir, sans-serif;
+  font-size: 1.2em;
+  line-height: 2;
+  letter-spacing: 0.04em;
+}
+
+
+.effect-c {
+  opacity: 0.5;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.5, 0, 0.5, 1);
+  transition: opacity 0.3s cubic-bezier(0.5, 0, 0.5, 1);
+}
+.effect-c .effect__heading:after {
+  opacity: 0;
+  content: '⎦';
+  font-size: 4em;
+  line-height: 1;
+  top: calc(100% + 20px);
+  left: calc(100% + 20px);
+  -webkit-transform: translate(-50%, 50%) scale(0.8);
+          transform: translate(-50%, 50%) scale(0.8);
+  -webkit-transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1), -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+  transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1), -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+  transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1), transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+  transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1), transform 0.5s cubic-bezier(0.5, 0, 0.5, 1), -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+}
+.effect-c .effect__heading:before {
+  position: absolute;
+  opacity: 0;
+  content: '⎡';
+  font-size: 4em;
+  line-height: 1;
+  top: 20px;
+  left: -20px;
+  -webkit-transform: translate(-50%, -150%) scale(0.8);
+          transform: translate(-50%, -150%) scale(0.8);
+  -webkit-transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1), -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+  transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1), -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+  transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1), transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+  transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1), transform 0.5s cubic-bezier(0.5, 0, 0.5, 1), -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+}
+.effect-c .effect__subheading {
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1), -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+  transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1), -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+  transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1), transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+  transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1), transform 0.5s cubic-bezier(0.5, 0, 0.5, 1), -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+}
+.effect-c:hover {
+  opacity: 1;
+}
+.effect-c:hover .effect__subheading {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+.effect-c:hover .effect__heading:after, .effect-c:hover .effect__heading:before {
+  opacity: 0.1;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+
+
 .footerHead {
   color: pink
 }
@@ -133,6 +229,74 @@ a:hover {
   justify-content: center;
   overflow-x: hidden;
 }
+
+/* ==================================== */
+/* GLOW ON HOVER */
+
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  padding-top: .5rem;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #fff;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+  color: #fff;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+  color: #fff;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  color: #fff;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+/* ==================================== */
 
 .hello {
   padding-top: 14rem;
@@ -245,6 +409,7 @@ footer.page-footer {
   margin: 0;
 }
 
+/* ======================================= */
 
 /* VINTALIGHT POLAROID GALLERY */
 
