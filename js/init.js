@@ -42,6 +42,8 @@ function getInputs() {
     $('.datepicker').datepicker();
     $('.timepicker').timepicker();
 
+    AOS.init();
+    
     submitBtn.on('click', function (event) {
       event.preventDefault();
       var input = getInputs();

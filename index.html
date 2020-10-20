@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -37,21 +38,11 @@
 
   <!-- BANNER IMAGE -->
   <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-top">
-      <div class="container">
-        <br><br>
-        <h1 class="header right purple-text text-darken-3 hello"></h1>
-        <div class="row center">
-          <h5 class="header col s12 light right-align"></h5>
-        </div>
-        <div class="row center">
-          <!-- <a href="http://materializecss.com/getting-started.html" id="bookBtn" class="btn-small waves-effect waves-light light-green accent-1 dark-grey-text right-align">Book an Appointment</a> -->
-        </div>
-        <br><br>
-
-      </div>
+    <div class="section hello" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+        <h1 class="header purple-text text-darken-3">Hi there, valued pups and parents! </h1>
     </div>
-    <div class="parallax"><img src="images/weimer.jpg" alt="beautiful weimerainer face"></div>
+    <div class="parallax"><img src="images/weimer.jpg" alt="beautiful weimerainer face">
+    </div>
   </div>
 
 
@@ -73,22 +64,24 @@
           </div>
         </div>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">search</i></h2>
-            <h5 class="center">Extra Attention To Detail</h5>
+        <div data-aos="fade-up">
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center brown-text"><i class="material-icons">search</i></h2>
+              <h5 class="center">Extra Attention To Detail</h5>
 
-            <p class="light">From making sure sensitive areas around face and ears are expertly trimmed, to filing each nail upon trimming them to ensure they are as smooth and rounded as possible, and sending each groomed pet home with a stylish bow or
-              bandana, we go the extra mile.</p>
+              <p class="light">From making sure sensitive areas around face and ears are expertly trimmed, to filing each nail upon trimming them to ensure they are as smooth and rounded as possible, and sending each groomed pet home with a stylish bow or
+                bandana, we go the extra mile.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">wb_sunny</i></h2>
-            <h5 class="center">Extra Green</h5>
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center brown-text"><i class="material-icons">wb_sunny</i></h2>
+              <h5 class="center">Extra Green</h5>
 
-            <p class="light">The products we use to keep your fur babies clean and fresh in between grooming appointments are made with only natural, biodegradable, non-toxic ingredients with no unnecessary additives or thickeners. They are also gluten-free, so no gluten allergens are absorbed through the skin, minimizing allergic reactions for you and your pets.</p>
+              <p class="light">The products we use to keep your fur babies clean and fresh in between grooming appointments are made with only natural, biodegradable, non-toxic ingredients with no unnecessary additives or thickeners. They are also gluten-free, so no gluten allergens are absorbed through the skin, minimizing allergic reactions for you and your pets.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -102,13 +95,15 @@
       <div class="container">
         <div class="row center">
           <div col l12 s12>
-            <h5 class="header light rightQuote right-align effect__heading effect-c">"The staff is super friendly and adhere to safety protocols to maximize
+            <div data-aos="fade-right">
+            <h5 class="header light rightQuote right-align effect__heading effect-c">
+              "The staff is super friendly and adhere to safety protocols to maximize
               protection for us and our pets with protective gear and curbside/at the door service.
               <br><br>
               My dogs always go in looking homeless and come out like royalty! 
               <br><br>
               I highly recommend their friendly and
-              professional grooming services."</h5>
+              professional grooming services."</div></h5>
           </div>
         </div>
       </div>
@@ -124,12 +119,12 @@
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4>Contact Us</h4>
           <p class="center-align light">We're open 7 days a week from <strong>7:00 a.m.</strong> until our last dog goes home. <br>Let us know a few
-            details and we'll call you personally <br> to discuss your needs and confirm your appointment.<br>We
+            details and we'll call you personally to discuss your needs and confirm your appointment. <br>We
             typically confirm within 2 hours.</p>
         </div>
       </div>
       <div class="row center">
-        <a href="book.html" id="bookBtn" class="btn-small pink darken-3 right-align glow-on-hover">Book
+        <a href="book.html" id="bookBtn" class="btn-small right-align glow-on-hover">Book
           an Appointment</a>
       </div>
 
@@ -181,7 +176,9 @@
         <div class="col l3 s12">
           <h5 class="footerHead">Location</h5>
           <h5 class="white-text">3689 Kings Row<br>Reno, NV 89503</h5>
-          <p>in the Viewcrest Shopping Center</p>
+          <p>in the Viewcrest Shopping Center</p><br>
+          <hr>
+          <br>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3076.7436037517064!2d-119.85912964936611!3d39.54283767937565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809947e8ef32f0d7%3A0xabd0e6f628ac168f!2s3689%20Kings%20Row%2C%20Reno%2C%20NV%2089503!5e0!3m2!1sen!2sus!4v1601182026681!5m2!1sen!2sus" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>        
         </div>
         <div class="col l3 s12">
@@ -197,6 +194,7 @@
           </ul>
         </div>
         <div class="col l1 s12">
+          <br>
           <iframe 
             border="0" 
             frameborder="0" 
@@ -219,6 +217,7 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </body>
 

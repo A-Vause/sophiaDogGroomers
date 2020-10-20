@@ -50,5 +50,5 @@ const activeVintalight = container => {
     });
 }
 
-// Activamos la función
+// Activate the function
 window.addEventListener("load", activeVintalight(document.getElementById("vintalight")));
