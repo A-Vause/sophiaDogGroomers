@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
@@ -41,7 +42,7 @@
         <br><br>
         <h1 class="header right purple-text text-darken-3 hello">About Us</h1>
         <div class="row center">
-          <h5 class="header col s12 light right-align">Our Philosophy and Our Team</h5>
+          <h3 class="header col s12 light right-align" data-aos="fade-right">Our Philosophy <br>and Our Team</h3>
         </div>
       </div>
     </div>
@@ -61,12 +62,14 @@
     </div>
   </div>
   
-  <div class="parallax-container">
+  <div class="parallax-container" data-aos="fade-down">
     <div class="section no-pad-top">
       <div class="container">
         <div class="row center">
           <div col l12 s12>
-            <h5 class="header light"><br>"...So kind, gentle, thorough, and caring. <br> What an incredible job they did with our elderly doggy. <br> She asked us about her personality, <br> health issues, grooming history experiences, etc.  <br>I felt so comfortable leaving her in Lisa's hands."</h5>
+            <section class="effect effect-c">
+            <h5 class="header light effect__heading"><br>"...So kind, gentle, thorough, and caring. <br> What an incredible job they did with our elderly doggy. <br> She asked us about her personality, <br> health issues, grooming history experiences, etc.  <br>I felt so comfortable leaving her in Lisa's hands."</h5>
+            </section>
           </div>
         </div>
       </div>
@@ -103,11 +106,13 @@
   <div class="container" id="aboutDiasCont">
     <div class="row">
       <div class="col wordBand2">
+        <section class="effect effect-c">
 
-        <h4 class="purple-text text-darken-3">Owners: The Dias Family</h4>
+        <h4 class="purple-text text-darken-3 effect__heading">Owners: The Dias Family</h4>
 
         <p><strong>Lisa</strong> and <strong>Bobby Dias</strong> took over the grooming salon on Kings Road in January 2020, realizing a long-held dream to own a grooming business.  They are longtime Reno residents and business partners.  Lisa has been in grooming for over 10 years, and worked in the very shop she now owns. She specializes in grooming techniques from specialty cuts to quality breed cuts, to mohawks and color. She takes care and her time with senior citizen and special needs doggies and puppies. There is no fur baby she can’t do and will try everything she can to pamper the aggressive kiddos, too!  Despite launching their business in the midst of the COVID pandemic and potentially the worst circumstances ever, they are committed to build the best grooming shop in Reno to bring your dogs, and best place to work for top-quality groomers.  They live in Northwest Reno with their 10-year-old daughter, and their two dogs: Tiny and Pal Capone.  
         </p>
+        </section>
 
       </div>
     </div>
@@ -157,7 +162,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container purple-text text-lighten-1">
-        Website by <a class="purple-text text-lighten-2" href="http://www.jaymedev.com">Jayme Development</a>
+        <a href="http://www.jaymedev.com"><img id="jaymedev-logo" alt="Designed & built by Jayme Development" src="images/jaymedev-logo.png"/></a>
       </div>
     </div>
   </footer>
@@ -168,7 +173,8 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     
 </body>
 </html>

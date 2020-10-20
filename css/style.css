@@ -27,45 +27,46 @@ nav .brand-logo {
 }
 
 .backgroundImg {
-  background-image: url('../images/friends.jpg');
-  position: absolute;
+  /* background-image: url('../images/friends.jpg'); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: lighten;
+  position: relative;
   background-size: cover;
-  min-width: 100%;
-  min-height: 85%;
-}
-
-#BBB-badge {
-  margin-top: 1.5rem;
+  height: 80vh;
+  width: 100%;
 }
 
 .backgroundImgGallery {
-  /* background-image: url('../images/gallery-wall.jpg'); */
+  background-image: url('../images/gallery-background.jpg');
   float: none;
   position: fixed;
   min-width: 100%;
   min-height: 100%;
 }
 
+#BBB-badge {
+  margin-top: 1.5rem;
+}
+
+#bookBanner {
+  height: 100vh;
+  align-items: center;
+}
+
 .bookCont {
   margin-top: 3.5em;
-  width: 80%;
-  margin-left: 20%;
-  /* margin-right: 20%; */
+  padding-top: 1em;
+  width: 100%;
+  height: 70vh;
+  margin: auto;
   position: relative;
   display: block;
 }
 
-.carousel .carousel-item {
-  width: 300px !important;
-  min-height: fit-content;
-}
-
-.carouselCont {
-  margin-top: 4%;
-  min-height: 52vh;
-  min-width: 100vh;
-  display: block;
-  float: none;
+.bookHead {
+  padding-top: 10%;
+  padding-left: 10%;
 }
 
 #cavalierCont {
@@ -92,15 +93,17 @@ nav .brand-logo {
 }
 
 .contactForm {
-  position: relative;
+  background-color: rgba(255, 255, 255, .8);
   color: brown;
-  text-align: center;
-  bottom: 15%;
-  background-color: rgba(255, 255, 255, .7);
-  width: 80%;
-  padding: 20px;
   display: block;
   float: none;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 15%;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  width: 80%;
 }
 
 .customNavbar {
@@ -211,8 +214,6 @@ a:hover {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
 }
-
-
 
 .footerHead {
   color: pink
@@ -386,65 +387,6 @@ a:hover {
   padding-bottom: 40px;
 }
 
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    align-items: top;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-
-  .hello {
-    margin-top: 20%;
-    font-size: 2rem;
-  }
-}
-
-@media only screen and (max-width : 750px) {
-  .parallax-container .section {
-    position: absolute;
-    align-items: top;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-
-  .hello {
-    margin-top: 20%;
-    font-size: 1.8rem;
-  }
-}
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-
-  .hello {
-    margin-top: 20%;
-    font-size: 2rem;
-  }
-}
-
-@media only screen and (max-width : 500px) {
-  #index-banner .section {
-    top: 0;
-  }
-
-  .header {
-    font-size: 2.5rem;
-    background-color: rgba(255, 255, 255, .3);
-  }
-
-  .hello {
-    margin-top: 175%;
-    text-align: center;
-    padding-left: 0%;
-    padding-bottom: 5%;
-  }
-}
-
 .icon-block {
   padding: 0 15px;
 }
@@ -452,9 +394,24 @@ a:hover {
   /* font-size: inherit; */
 }
 
+#jaymedev-logo {
+  width: 40%;
+  height: auto;
+}
+
 footer.page-footer {
   margin: 0;
+  width: 100%;
+  position: absolute;
+  left: 0;
 }
+
+.services {
+  position: relative;
+  margin-top: 25%;
+  left: 65%;
+}
+
 
 /* ======================================= */
 
@@ -880,3 +837,69 @@ footer.page-footer {
   z-index: 10000;
   cursor: pointer;
 }
+
+/* ========================== */
+/* BREAKPOINTS */
+
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    align-items: top;
+  }
+  #index-banner .section {
+    top: 10%;
+    width: 100%;
+  }
+
+  .hello {
+    margin-top: 20%;
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width : 750px) {
+  .parallax-container .section {
+    position: absolute;
+    align-items: top;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+
+  .hello {
+    margin-top: 20%;
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+
+  .hello {
+    margin-top: 20%;
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width : 500px) {
+  #index-banner .section {
+    top: 0;
+  }
+
+  .header {
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, .3);
+  }
+
+  .hello {
+    margin-top: 175%;
+    text-align: center;
+    padding-left: 0%;
+    padding-bottom: 5%;
+  }
+}
+
+/* ============================= */
