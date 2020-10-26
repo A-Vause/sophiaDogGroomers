@@ -875,7 +875,7 @@ footer.page-footer {
 
 @media only screen and (max-width : 600px) {
   #index-banner .section {
-    top: 0;
+    top: 10%;
   }
 
   .hello {
@@ -886,12 +886,13 @@ footer.page-footer {
 
 @media only screen and (max-width : 500px) {
   #index-banner .section {
-    top: 0;
+    top: 10%;
   }
 
   .header {
     font-size: 2rem;
-    background-color: rgba(255, 255, 255, .3);
+    text-align: center;
+    /* background-color: rgba(255, 255, 255, .3); */
   }
 
   .hello {
