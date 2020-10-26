@@ -65,17 +65,13 @@ nav .brand-logo {
 }
 
 .bookHead {
+  font-size: 4rem;
   padding-top: 3%;
   padding-left: 10%;
 }
 
-#cavalierCont {
-  height: 20%;
-  size: cover;
-}
-
 #cavalierImg {
-  top: -15%;
+  top: -180px;
 }
 
 .centerQuote {
@@ -890,9 +886,25 @@ footer.page-footer {
   }
 
   .header {
-    font-size: 2rem;
+    margin-top: 20%;
+    padding-top: 85%;
+    font-size: 4rem;
     text-align: center;
-    /* background-color: rgba(255, 255, 255, .3); */
+  }
+
+  .subhead {
+    margin-top: -25px;
+  }
+
+  .services {
+    font-size: 4rem;
+    position: relative;
+    margin-top: 10%;
+    left: 0;
+  }  
+
+  .bookHead {
+    font-size: 4rem;
   }
 
   .hello {
@@ -900,6 +912,16 @@ footer.page-footer {
     text-align: center;
     padding-left: 0%;
     padding-bottom: 5%;
+  }
+
+  #muttImg {
+    left: -30px;
+    top: -120px;
+  }
+
+  #doodleImg {
+    margin-left: 500px;
+
   }
 }
 
