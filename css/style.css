@@ -341,6 +341,7 @@ a:hover {
 .rightQuote {
   padding-left: 70%;
   margin-right: -10%;
+  text-align: right;
 }
 
 #muttImg {
@@ -773,6 +774,7 @@ footer.page-footer {
   overflow: hidden;
   cursor: pointer;
 }
+
 @media screen and (max-width: 500px) {
   .vintalight__photo {
     width: 6.475em;
@@ -902,11 +904,23 @@ footer.page-footer {
     top: 10%;
   }
 
+ .brand-logo {
+  top: 20%;
+  }
+
   .header {
     margin-top: 20%;
     padding-top: 85%;
     font-size: 4rem;
     text-align: center;
+  }
+
+  .rightQuote {
+    padding-top: 70%;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: center;
+    margin: 0;
   }
 
   .subhead {
