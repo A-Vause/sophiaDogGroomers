@@ -5,12 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lisa's Pampered Paws Pet Grooming | Book Appointment</title>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      // https://dashboard.emailjs.com/admin/integration
+      emailjs.init('user_HwMXwEHp0KORxnvgNKatv');
+    })();
+  </script>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
 <body>
@@ -21,11 +28,11 @@
       <div class="nav-wrapper container">
         <a id="logo-container" href="index.html" class="brand-logo">
           <img alt="Lisa's Pampered Paws" src="images/LPP-logo-horizontal.png" class="brand-logo" /> </a>
-          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
           <li><a href="./services.html">Services</a></li>
           <li><a href="./gallery.html">Gallery</a></li>
-          <!-- <li class="active"><a href="./book.html">Book Appointment</a></li> -->
+          <li class="active"><a href="./book.html">Book Appointment</a></li>
           <li><a href="./about.html">About Us</a></li>
         </ul>
       </div>
@@ -36,40 +43,131 @@
     <li><a href="./index.html">Home</a></li>
     <li><a href="./services.html">Services</a></li>
     <li><a href="./gallery.html">Gallery</a></li>
-    <!-- <li class="active"><a href="./book.html">Book</a></li> -->
+    <li class="active"><a href="./book.html">Book</a></li>
     <li><a href="./about.html">About Us</a></li>
   </ul>
 
 
   <!-- BANNER IMAGE -->
-  <div id="index-banner" class="parallax-container responsive-img">
-    <div class="section" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-      <h1 class="header purple-text text-darken-3 bookHead">Book <br>A Date</h1>
+  <div id="index-banner" class="parallax-container">
+
+    <div class="container">
+      <!-- <div class="section" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"> -->
+        <h1 class="bookHead purple-text text-darken-3">Book A Date</h1>
+        <p class="bookSubhead light">We're open 7 days a week <br>from 7:00 a.m. until<br> the last pup goes home.</p>
+      <!-- </div> -->
     </div>
+
+    <!-- Modal Trigger -->
+    <a class="btn-small glow-on-hover modal-trigger" id="reqModalBtn" href="#modal1">Request Appointment</a>
+
     <div class="parallax" id="bookBanner"><img src="images/friends.jpg" alt="person and dog relaxing looking at a lake">
     </div>
+    
   </div>
 
-<div class="container">
-  <!-- Begin Constant Contact Inline Form Code -->
-  <div class="ctct-inline-form" data-form-id="4b5dbce0-5788-40b7-915c-725cbcee8864"></div>
-  <!-- End Constant Contact Inline Form Code -->
-</div>
+  <!-- FORM MODAL-->
 
-  <!-- FORM -->
-  <div class="container bookCont">
-    <div class="row">
-      <div class="col l12 s12">
-        <h3 class="center white-text"></h3>
-        <p class="center">We're open 7 days a week from 7:00 a.m. until the last pup goes home.<br>
-          Let us know a few details and we'll call you personally to confirm. We cannot guarantee
-          your requested time but we'll try our best! <br>We typically respond within 2 hours.<br><br></p>
-          <div id="pickerSpot"></div>
+  <div class="container">
+
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Request an Appointment</h4>
+        <p>Let us know a few details and we'll call you personally to confirm. We cannot guarantee
+          your requested time but we'll try our best! <br>We typically respond within 2 hours.</p>
+
+        <form id="requestForm" method="post">
+
+            <div class="row">
+
+              <div class="input-field col l6 m6 s12">
+                <input id="firstName" type="text" class="validate" name="firstName">
+                <label for="firstName">First Name</label>
+              </div>
+
+              <div class="input-field col l6 m6 s12">
+                <input id="lastName" type="text" class="validate" name="lastName">
+                <label for="lastName">Last Name</label>
+              </div>
+
+              <div class="col l6 m6 s12">
+                <div class="input-field">
+                  <input id="phone" type="text" class="validate" name="phone">
+                  <label for="phone">Phone</label>
+                </div>
+              </div>
+
+              <div class="col l6 m6 s12">
+                <div class="input-field">
+                  <input id="email" type="text" class="validate" name="email">
+                  <label for="email">Email</label>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="col l6 m6 s12">
+
+                <div class="input-field">
+                  <input id="petName" type="text" class="validate" name="petName">
+                  <label for="petName">Pet's Name</label>
+                </div>
+
+              </div>
+
+              <div class="col l6 m6 s12">
+
+                <div class="input-field">
+                  <select id="petType" name="petType">
+                    <option value="Dog (Small)">Dog (Small)</option>
+                    <option value="Dog (Medium)">Dog (Medium)</option>
+                    <option value="Dog (Large)">Dog (Large)</option>
+                    <option value="Dog (Extra Large or Giant)">Dog (Extra Large or Giant)</option>
+                    <option value="Cat">Cat</option>
+                    <option value="Other/Not Sure">Other/Not Sure</option>
+                  </select>
+                  <label for="petType">Pet Type</label>
+                </div>
+
+              </div>
+
+              <div class="col l6 m6 s12">
+
+                <div class="input-field">
+                  <input id="reqDate" type="text" class="datepicker" container="pickerSpot" setDefaultDate="true"
+                    name="reqDate">
+                  <label for="reqDate">Requested Date(s)</label>
+                </div>
+
+              </div>
+
+              <div class="col l6 m6 s12">
+
+                <div class="input-field">
+                  <input id="reqTime" type="text" class="timepicker" name="reqTime">
+                  <label for="reqTime">Requested Time</label>
+                </div>
+
+              </div>
+            </div>
+            <button class="btn glow-on-hover" type="submit" name="action" id="submitBtn">Submit
+              <i class="material-icons right">send</i>
+            </button>
+
       </div>
+
+
+      </form>
+
     </div>
 
-    <div data-aos="fade-up">
+    <div class="modal-footer"></div>
 
+  </div>
+  </div>
+
+  <!-- 
       <form id="requestForm" method="post">
 
         <div class="contactForm">
@@ -77,37 +175,36 @@
           <div class="row">
 
             <div class="input-field col l3 m3 s12">
-              <input id="firstName" type="text" class="validate">
+              <input id="firstName" type="text" class="validate" name="firstName">
               <label for="firstName">First Name</label>
             </div>
 
             <div class="input-field col l3 m3 s12">
-              <input id="lastName" type="text" class="validate">
+              <input id="lastName" type="text" class="validate" name="lastName">
               <label for="lastName">Last Name</label>
             </div>
 
             <div class="col l3 m3 s12">
               <div class="input-field">
-                <input id="phone" type="text" class="validate">
+                <input id="phone" type="text" class="validate" name="phone">
                 <label for="phone">Phone</label>
               </div>
             </div>
 
             <div class="col l3 m3 s12">
               <div class="input-field">
-                <input id="email" type="text" class="validate">
+                <input id="email" type="text" class="validate" name="email">
                 <label for="email">Email</label>
               </div>
             </div>
 
           </div>
 
-
           <div class="row">
             <div class="col l3 m3 s12">
 
               <div class="input-field">
-                <input id="petName" type="text" class="validate">
+                <input id="petName" type="text" class="validate" name="petName">
                 <label for="petName">Pet's Name</label>
               </div>
 
@@ -116,13 +213,13 @@
             <div class="col l3 m3 s12">
 
               <div class="input-field">
-                <select id="petType">
-                  <option value="1">Dog (Small)</option>
-                  <option value="2">Dog (Medium)</option>
-                  <option value="3">Dog (Large)</option>
-                  <option value="3">Dog (Extra Large or Giant)</option>
-                  <option value="3">Cat</option>
-                  <option value="3">Other/Not Sure</option>
+                <select id="petType" name="petType">
+                  <option value="Dog (Small)">Dog (Small)</option>
+                  <option value="Dog (Medium)">Dog (Medium)</option>
+                  <option value="Dog (Large)">Dog (Large)</option>
+                  <option value="Dog (Extra Large or Giant)">Dog (Extra Large or Giant)</option>
+                  <option value="Cat">Cat</option>
+                  <option value="Other/Not Sure">Other/Not Sure</option>
                 </select>
                 <label for="petType">Pet Type</label>
               </div>
@@ -132,8 +229,9 @@
             <div class="col l3 m3 s12">
 
               <div class="input-field">
-                <input id="date" type="text" class="datepicker" container="pickerSpot" setDefaultDate="true">
-                <label for="date">Requested Date(s)</label>
+                <input id="reqDate" type="text" class="datepicker" container="pickerSpot" setDefaultDate="true"
+                  name="reqDate">
+                <label for="reqDate">Requested Date(s)</label>
               </div>
 
             </div>
@@ -141,8 +239,8 @@
             <div class="col l3 m3 s12">
 
               <div class="input-field">
-                <input id="time" type="text" class="timepicker">
-                <label for="time">Requested Time</label>
+                <input id="reqTime" type="text" class="timepicker" name="reqTime">
+                <label for="reqTime">Requested Time</label>
               </div>
 
             </div>
@@ -154,8 +252,7 @@
 
         </div>
     </div>
-    </form>
-  </div>
+    </form> -->
 
   <!-- FOOTER -->
 
@@ -208,7 +305,8 @@
     </div>
     <div class="footer-copyright">
       <div class="container purple-text text-lighten-1">
-        <a href="http://www.jaymedev.com"><img id="jaymedev-logo" alt="Designed & built by Jayme Development" src="images/jaymedev-logo.png"/></a>
+        <a href="http://www.jaymedev.com"><img id="jaymedev-logo" alt="Designed & built by Jayme Development"
+            src="images/jaymedev-logo.png" /></a>
       </div>
     </div>
   </footer>

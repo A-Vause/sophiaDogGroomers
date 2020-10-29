@@ -65,9 +65,25 @@ nav .brand-logo {
 }
 
 .bookHead {
+  position: relative;
+  margin-left: -10%;
   font-size: 4rem;
-  padding-top: 3%;
-  padding-left: 10%;
+  top: 0;
+  margin-top: 15%;
+}
+
+.bookSubhead {
+  position: relative;
+  margin-left: -10%;
+  font-size: 1.8rem;
+  left: 0;
+}
+
+#reqModalBtn {
+  position: relative;
+  left: 0;
+  margin-left: 8%;
+  margin-top: 30px;
 }
 
 #cavalierImg {
@@ -905,7 +921,16 @@ footer.page-footer {
   }  
 
   .bookHead {
+    position: relative;
     font-size: 4rem;
+    top: 0;
+    margin-top: 40%;
+  }
+
+  .bookSubhead {
+    position: relative;
+    font-size: 1.8rem;
+    left: 0;
   }
 
   .hello {
