@@ -54,7 +54,7 @@
     <div class="container">
       <!-- <div class="section" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"> -->
       <h1 class="bookHead purple-text text-darken-3">Book A Date</h1>
-      <p class="bookSubhead light">We're open 7 days a week <br>from 7:00 a.m. until<br> the last pup goes home.</p>
+      <p class="bookSubhead light">We're open 7 days a week <br>from 7:00 a.m. until<br> the last pup goes home. <br>Just let us know a few details and <br>we'll call you personally to confirm.</p>
       <!-- </div> -->
     </div>
 
@@ -73,42 +73,37 @@
     <div id="formModal" class="modal">
       <div class="modal-content">
         <h4>Request an Appointment</h4>
-        <p>Let us know a few details and we'll call you personally to confirm. We cannot guarantee
-          your requested time but we'll try our best! <br>We typically respond within 2 hours.</p>
+        <p>We cannot guarantee your requested time but we'll try our best! <br>We typically respond within 2 hours.</p>
 
         <form id="requestForm" method="post">
 
           <div class="row">
 
-            <div class="input-field col l6 m6 s12">
+            <div class="input-field col l3 m6 s12">
               <input id="firstName" type="text" class="validate" name="firstName">
               <label for="firstName">First Name</label>
             </div>
 
-            <div class="input-field col l6 m6 s12">
+            <div class="input-field col l3 m6 s12">
               <input id="lastName" type="text" class="validate" name="lastName">
               <label for="lastName">Last Name</label>
             </div>
 
-            <div class="col l6 m6 s12">
+            <div class="col l3 m6 s12">
               <div class="input-field">
                 <input id="phone" type="text" class="validate" name="phone">
                 <label for="phone">Phone</label>
               </div>
             </div>
 
-            <div class="col l6 m6 s12">
+            <div class="col l3 m6 s12">
               <div class="input-field">
                 <input id="email" type="text" class="validate" name="email">
                 <label for="email">Email</label>
               </div>
             </div>
 
-          </div>
-
-          <div class="row">
-
-            <div class="col l6 m6 s12">
+            <div class="col l3 m6 s12">
 
               <div class="input-field">
                 <input id="petName" type="text" class="validate" name="petName">
@@ -117,7 +112,7 @@
 
             </div>
 
-            <div class="col l6 m6 s12">
+            <div class="col l3 m6 s12">
 
               <div class="input-field">
                 <select id="petType" name="petType">
@@ -133,11 +128,7 @@
 
             </div>
 
-          </div>
-
-          <div class="row">
-
-            <div class="col l6 m6 s12">
+            <div class="col l3 m6 s12">
 
               <div class="input-field">
                 <input id="reqTime" type="text" class="timepicker" name="reqTime">
@@ -146,7 +137,7 @@
 
             </div>
 
-            <div class="col l6 m6 s12">
+            <div class="col l3 m6 s12">
 
               <div class="input-field">
                 <input id="reqDate" type="text" class="datepicker" setDefaultDate="true" name="reqDate">
@@ -154,6 +145,7 @@
               </div>
 
             </div>
+
           </div>
 
           <div class="row center">

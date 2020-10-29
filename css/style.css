@@ -374,6 +374,15 @@ a:hover {
   color: #26a69a;
 }
 
+.sidenav {
+  background-color: #978083;
+}
+
+.sidenav:li {
+  border-style: solid;
+  border-bottom: white;
+}
+
 .parallax-image {
   position: top;
 }
@@ -423,6 +432,15 @@ footer.page-footer {
   position: relative;
   margin-top: 25%;
   left: 65%;
+}
+
+.small-logo {
+  position: relative;
+  top: 5%;
+  margin-left: 5%;
+  margin: auto;
+  width: 90%;
+  height: auto;
 }
 
 
