@@ -28,9 +28,6 @@ function getInputs() {
     return input;
 }
 
-
-
-
 $(document).ready(function(){
 
     $('.sidenav').sidenav();
