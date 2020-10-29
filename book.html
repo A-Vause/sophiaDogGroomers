@@ -53,24 +53,24 @@
 
     <div class="container">
       <!-- <div class="section" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"> -->
-        <h1 class="bookHead purple-text text-darken-3">Book A Date</h1>
-        <p class="bookSubhead light">We're open 7 days a week <br>from 7:00 a.m. until<br> the last pup goes home.</p>
+      <h1 class="bookHead purple-text text-darken-3">Book A Date</h1>
+      <p class="bookSubhead light">We're open 7 days a week <br>from 7:00 a.m. until<br> the last pup goes home.</p>
       <!-- </div> -->
     </div>
 
     <!-- Modal Trigger -->
-    <a class="btn-small glow-on-hover modal-trigger" id="reqModalBtn" href="#modal1">Request Appointment</a>
+    <a class="btn-small glow-on-hover modal-trigger" id="reqModalBtn" href="#formModal">Request Appointment</a>
 
     <div class="parallax" id="bookBanner"><img src="images/friends.jpg" alt="person and dog relaxing looking at a lake">
     </div>
-    
+
   </div>
 
   <!-- FORM MODAL-->
 
   <div class="container">
 
-    <div id="modal1" class="modal">
+    <div id="formModal" class="modal">
       <div class="modal-content">
         <h4>Request an Appointment</h4>
         <p>Let us know a few details and we'll call you personally to confirm. We cannot guarantee
@@ -78,92 +78,100 @@
 
         <form id="requestForm" method="post">
 
-            <div class="row">
+          <div class="row">
 
-              <div class="input-field col l6 m6 s12">
-                <input id="firstName" type="text" class="validate" name="firstName">
-                <label for="firstName">First Name</label>
+            <div class="input-field col l6 m6 s12">
+              <input id="firstName" type="text" class="validate" name="firstName">
+              <label for="firstName">First Name</label>
+            </div>
+
+            <div class="input-field col l6 m6 s12">
+              <input id="lastName" type="text" class="validate" name="lastName">
+              <label for="lastName">Last Name</label>
+            </div>
+
+            <div class="col l6 m6 s12">
+              <div class="input-field">
+                <input id="phone" type="text" class="validate" name="phone">
+                <label for="phone">Phone</label>
               </div>
+            </div>
 
-              <div class="input-field col l6 m6 s12">
-                <input id="lastName" type="text" class="validate" name="lastName">
-                <label for="lastName">Last Name</label>
+            <div class="col l6 m6 s12">
+              <div class="input-field">
+                <input id="email" type="text" class="validate" name="email">
+                <label for="email">Email</label>
               </div>
+            </div>
 
-              <div class="col l6 m6 s12">
-                <div class="input-field">
-                  <input id="phone" type="text" class="validate" name="phone">
-                  <label for="phone">Phone</label>
-                </div>
-              </div>
+          </div>
 
-              <div class="col l6 m6 s12">
-                <div class="input-field">
-                  <input id="email" type="text" class="validate" name="email">
-                  <label for="email">Email</label>
-                </div>
+          <div class="row">
+
+            <div class="col l6 m6 s12">
+
+              <div class="input-field">
+                <input id="petName" type="text" class="validate" name="petName">
+                <label for="petName">Pet's Name</label>
               </div>
 
             </div>
 
-            <div class="row">
-              <div class="col l6 m6 s12">
+            <div class="col l6 m6 s12">
 
-                <div class="input-field">
-                  <input id="petName" type="text" class="validate" name="petName">
-                  <label for="petName">Pet's Name</label>
-                </div>
-
+              <div class="input-field">
+                <select id="petType" name="petType">
+                  <option value="Dog (Small)">Dog (Small)</option>
+                  <option value="Dog (Medium)">Dog (Medium)</option>
+                  <option value="Dog (Large)">Dog (Large)</option>
+                  <option value="Dog (Extra Large or Giant)">Dog (Extra Large or Giant)</option>
+                  <option value="Cat">Cat</option>
+                  <option value="Other/Not Sure">Other/Not Sure</option>
+                </select>
+                <label for="petType">Pet Type</label>
               </div>
 
-              <div class="col l6 m6 s12">
-
-                <div class="input-field">
-                  <select id="petType" name="petType">
-                    <option value="Dog (Small)">Dog (Small)</option>
-                    <option value="Dog (Medium)">Dog (Medium)</option>
-                    <option value="Dog (Large)">Dog (Large)</option>
-                    <option value="Dog (Extra Large or Giant)">Dog (Extra Large or Giant)</option>
-                    <option value="Cat">Cat</option>
-                    <option value="Other/Not Sure">Other/Not Sure</option>
-                  </select>
-                  <label for="petType">Pet Type</label>
-                </div>
-
-              </div>
-
-              <div class="col l6 m6 s12">
-
-                <div class="input-field">
-                  <input id="reqDate" type="text" class="datepicker" container="pickerSpot" setDefaultDate="true"
-                    name="reqDate">
-                  <label for="reqDate">Requested Date(s)</label>
-                </div>
-
-              </div>
-
-              <div class="col l6 m6 s12">
-
-                <div class="input-field">
-                  <input id="reqTime" type="text" class="timepicker" name="reqTime">
-                  <label for="reqTime">Requested Time</label>
-                </div>
-
-              </div>
             </div>
-            <button class="btn glow-on-hover" type="submit" name="action" id="submitBtn">Submit
+
+          </div>
+
+          <div class="row">
+
+            <div class="col l6 m6 s12">
+
+              <div class="input-field">
+                <input id="reqTime" type="text" class="timepicker" name="reqTime">
+                <label for="reqTime">Requested Time</label>
+              </div>
+
+            </div>
+
+            <div class="col l6 m6 s12">
+
+              <div class="input-field">
+                <input id="reqDate" type="text" class="datepicker" setDefaultDate="true" name="reqDate">
+                <label for="reqDate">Requested Date(s)</label>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="row center">
+            <button class="btn glow-on-hover modal-close" type="submit" name="action" id="submitBtn">Submit
               <i class="material-icons right">send</i>
             </button>
+          </div>
 
       </div>
 
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+      </div>
 
       </form>
-
     </div>
 
-    <div class="modal-footer"></div>
-
+  </div>
   </div>
   </div>
 
