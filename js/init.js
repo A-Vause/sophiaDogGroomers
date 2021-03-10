@@ -52,6 +52,8 @@ $(document).ready(function(){
       event.preventDefault();
       var input = getInputs();
       emailjs.sendForm('contact_service', 'contact_form', this);
+      alert("Your message is being sent!");
+      console.log("Sent this:", this)
     })
 
   }); // end of document ready
