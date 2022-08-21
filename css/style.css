@@ -916,14 +916,14 @@ footer.page-footer {
   }
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 750px) {
   
   #index-banner .section {
     top: 10%;
   }
 
  .brand-logo {
-  top: 20%;
+  top: 30%;
   }
 
   .header {
