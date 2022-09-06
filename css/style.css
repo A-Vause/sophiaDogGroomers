@@ -371,6 +371,7 @@ a:hover {
   float: none;
 }
 
+
 .sidenav-trigger {
   color: #26a69a;
 }
@@ -904,19 +905,14 @@ footer.page-footer {
     margin-top: 20%;
     font-size: 1.8rem;
   }
-}
 
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 10%;
+  #neighborFav {
+    top: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
-
-  .hello {
-    margin-top: 20%;
-    font-size: 2rem;
-  }
+    
 }
-
 
 @media only screen and (max-width : 900px) {
   
@@ -977,8 +973,7 @@ footer.page-footer {
   }
 
   .hello {
-    margin-top: 175%;
-    text-align: center;
+    /* margin-top: 95%; */
     padding-left: 0%;
     padding-bottom: 5%;
   }
@@ -992,5 +987,19 @@ footer.page-footer {
     margin-left: 500px;
   }
 }
+
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 10%;
+  }
+
+  .hello {
+    margin-top: 95%;
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
 
 /* ============================= */
