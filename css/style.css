@@ -16,6 +16,7 @@ body {
 
 nav ul a,
 nav .brand-logo {
+  top: 30%;
   color: #444;
   max-height: 12rem;
   width: auto;
@@ -916,7 +917,8 @@ footer.page-footer {
   }
 }
 
-@media only screen and (max-width : 750px) {
+
+@media only screen and (max-width : 900px) {
   
   #index-banner .section {
     top: 10%;
